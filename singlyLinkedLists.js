@@ -61,15 +61,18 @@ SingleLinkedList.prototype.remove = function (node) {
 
  SingleLinkedList.prototype.reverse = function (Node) {
   var 
-    current
-  , previous
-  , firsthold;
+    current,
+    next, 
+    previous;
+  
   current = this.first;
-  while (current) {
-    previous = current;
-    current = current.next;
-    this.first = current;
-    this.first.next = previous;
+
+  while (current.next) {
+    next = current.next;
+    previous = this.first;
+    current.next = next.next;
+    next.next = previous;
+    this.first = next;
   }
 };
 

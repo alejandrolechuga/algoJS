@@ -1,4 +1,6 @@
-
+/**
+* @class: Node
+*/
 function Node(value) {
   this.next = null;
   this.value = value;
@@ -54,24 +56,25 @@ SingleLinkedList.prototype.remove = function (node) {
   }
   return node;
 };
-// [ f ] [ 1 ] [ 2 ]
-// [ 1 ] [ f ] [ 2 ]
-// [ 1 ] [ 2 ] [ f ]
-// [ 2 ] [ 1 ] [ f ]
 
- SingleLinkedList.prototype.reverse = function (Node) {
+SingleLinkedList.prototype.reverse = function (Node) {
   var 
-    current,
-    next, 
-    previous;
-  
+    current
+  , next
+  , previous;
+  // Current first node  
   current = this.first;
-
+  // Traverse list 
   while (current.next) {
+    // Holds the next current node
     next = current.next;
+    // Holds the previous first node
     previous = this.first;
+    // We move the current.next reference to the next.next node
     current.next = next.next;
+    // And the next.next node to the previous 
     next.next = previous;
+    // The firs node is the next node
     this.first = next;
   }
 };

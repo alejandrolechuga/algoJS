@@ -79,11 +79,3 @@ SingleLinkedList.prototype.reverse = function (Node) {
   }
 };
 
-var sllist = new SingleLinkedList();
-sllist.add(new Node(1));
-sllist.add(new Node(2));
-sllist.add(new Node(3));
-var node3 = sllist.add(new Node(4));
-sllist.remove(node3);
-sllist.reverse();
-console.log(sllist.first);

@@ -3,7 +3,7 @@
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Singly-linked-list.svg/816px-Singly-linked-list.svg.png">
 
 <h2>How to create one ? </h2>
-```
+```javascript
 // New Singly Linked List
 var sllist = new SingleLinkedList();
 // Adding Nodes

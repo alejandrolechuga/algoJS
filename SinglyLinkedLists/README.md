@@ -16,5 +16,4 @@ var node3 = sllist.add(new Node(4));
 sllist.remove(node3);
 // Reverse the list
 sllist.reverse();
-``
-
+```

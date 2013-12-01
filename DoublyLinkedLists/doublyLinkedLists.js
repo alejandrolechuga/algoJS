@@ -18,6 +18,7 @@ DoubleLinkedList.prototype.addAtBeginning = function (node) {
 		this.first.next = hold;
 	} else {
 		this.first = node;
+		this.last = node;
 	}
 };
 
@@ -29,6 +30,7 @@ DoubleLinkedList.prototype.addAtEnd = function(node) {
 		hold.next = this.last;
 		this.last.previous = hold;
 	} else {
+		this.last = node;
 		this.last = node;
 	}
 };

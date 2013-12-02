@@ -1,4 +1,9 @@
 
+/**
+* Single Linked List
+* @class SingleLinkedList
+* @constructor
+*/
 function Node(value) {
   this.next = null;
   this.value = value;

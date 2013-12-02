@@ -1,8 +1,8 @@
-<h3> Singly Linked Lists </h3>
+<h2> Singly Linked Lists </h2>
 <p>Singly linked lists contain nodes which have a data field as well as a next field, which points to the next node in line</p>
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Singly-linked-list.svg/816px-Singly-linked-list.svg.png">
 
-<h2>How to create one ? </h2>
+<h1>How to create one ? </h1>
 ```javascript
 // New Singly Linked List
 var sllist = new SingleLinkedList();

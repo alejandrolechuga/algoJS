@@ -1,15 +1,28 @@
 /**
-* @class: Node
+* @class Node
+* @constructor
 */
 function Node(value) {
   this.next = null;
   this.value = value;
 }
 
+/**
+* Single Linked List
+* @class SingleLinkedList
+* @constructor
+*/
 function SingleLinkedList () {
+  // Pointer to the first node in the list
   this.first = null;
 };
 
+/**
+* Appends data nodes to the list
+* @method add
+* @param Node
+* @return Node
+*/
 SingleLinkedList.prototype.add = function (node) {
   var current; 
   // Checking first if exists 
@@ -28,6 +41,12 @@ SingleLinkedList.prototype.add = function (node) {
   return node;
 };
 
+/**
+* Removes an specific node from the list
+* @method remove
+* @param Node
+* @return Node
+*/
 SingleLinkedList.prototype.remove = function (node) {
   var 
     current 
@@ -57,7 +76,12 @@ SingleLinkedList.prototype.remove = function (node) {
   return node;
 };
 
-SingleLinkedList.prototype.reverse = function (Node) {
+/**
+* Reverses the lists 
+* @method reverse
+* @return Void
+*/
+SingleLinkedList.prototype.reverse = function () {
   var 
     current
   , next

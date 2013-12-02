@@ -20,6 +20,7 @@ DoubleLinkedList.prototype.addAtBeginning = function (node) {
     this.first = node;
     this.last = node;
   }
+   return node;
 };
 
 DoubleLinkedList.prototype.addAtEnd = function(node) {
@@ -30,7 +31,25 @@ DoubleLinkedList.prototype.addAtEnd = function(node) {
     hold.next = this.last;
     this.last.previous = hold;
   } else {
-    this.last = node;
+    this.first = node;
     this.last = node;
   }
+  return node;
 };
+
+DoubleLinkedList.prototype.remove = function (node) {
+  if (!node.previous) {
+    this.first = node.next;
+  } else {
+    node.previous.next = node.next;
+  }
+
+  if (!node.next) {
+    this.last = node;
+  } else {
+    node.next.previous = node.previous;
+  }
+   return node;
+};
+
+

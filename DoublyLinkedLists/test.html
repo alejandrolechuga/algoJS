@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="doublyLinkedLists.js"></script>
+	</head>
+	<body>
+		<script>
+			var dll = new DoubleLinkedList();
+			dll.addAtBeginning(new Node(1));
+			dll.addAtBeginning(new Node(2));
+
+			var node3 = dll.addAtBeginning(new Node(3));
+			dll.addAtBeginning(new Node(4));
+
+			dll.remove(node3);
+			console.log(dll);
+		</script>
+	</body>
+</html>

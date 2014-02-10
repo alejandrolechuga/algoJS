@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <script src="binaryTree.js"></script>
+    <script>
+      var BT = new BinaryTree();
+      console.log(BT);
+      var node = BT.insert(null, 1);
+      console.log('inserting 1', node);
+      node = BT.insert(node, 2);
+      console.log('inserting 2', node);
+      node = BT.insert(node, 3);
+      console.log('inserting 3', node);
+      console.log('Lookup for 2');
+      console.log(BT.lookup(node, 2));
+    </script>
+  </body>
+</html>

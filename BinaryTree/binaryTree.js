@@ -34,10 +34,11 @@ BinaryTree.prototype.lookup = function (node, target) {
 BinaryTree.prototype.insert =  function (node, data) {
   // if the node is null return a new node
   if (node == null) {
-    return Node(data);
+    console.log('printing node', node);
+    return new Node(data);
   } else {
     // otherwise recur down the tree
-    if (node.data <= data) {
+    if (data <= node.data) {
       node.left = this.insert(node.left , data);
     } else {
       node.right = this.insert(node.right, data);

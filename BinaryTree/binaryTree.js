@@ -1,3 +1,7 @@
+/** 
+
+*/
+
 function Node (data) {
 	this.value = data;
 	this.right = null;
@@ -7,3 +11,11 @@ function Node (data) {
 function BinaryTree () {
 	this.root;
 }
+
+BinaryTree.prototype.lookup = function () {
+
+};
+
+BinaryTree.prototype.insert = function () {
+
+};

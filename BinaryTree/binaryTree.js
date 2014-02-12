@@ -8,9 +8,18 @@ function Node (data) {
   this.left = null;
 }
 
+/**
+* @class BinaryTree
+*/
 function BinaryTree () {
 }
 
+/**
+* @method lookup
+* @param node Node
+* @param target Mixed
+* @return Node|false
+*/
 BinaryTree.prototype.lookup = function (node, target) {
   // Base case == emty tree
   // if the target is not found return a false value
@@ -34,6 +43,12 @@ BinaryTree.prototype.lookup = function (node, target) {
   }
 };
 
+/**
+* @method insert
+* @param node Node
+* @param data Mixed
+* @return node Node
+*/
 BinaryTree.prototype.insert =  function (node, data) {
   // if the node is null return a new node
   if (node == null) {

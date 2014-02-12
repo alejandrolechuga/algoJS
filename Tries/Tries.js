@@ -11,14 +11,14 @@ Trie.prototype.create = function () {
   return new Node();
 };
 
-Trie.prototype.add = function (node, text) {
+Trie.prototype.add = function (trie, key) {
+  //node.
+};
+
+Trie.prototype.isMember = function (trie, key) {
 
 };
 
-Trie.prototype.isMember = function () {
-
-};
-
-Trie.prototype.remove = function () {
+Trie.prototype.remove = function (trie, key) {
 
 };

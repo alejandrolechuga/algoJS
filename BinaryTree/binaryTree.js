@@ -1,5 +1,5 @@
 /** 
-
+  @Binary Tree
 */
 
 function Node (data) {

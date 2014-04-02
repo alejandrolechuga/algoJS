@@ -17,4 +17,5 @@ function bubbleSort (array) {
   }
   return array;
 }
-//console.log(bubbleSort([1, 2, 10, 3, 6, 5, 5, 5]));
+var sorted = bubbleSort([1, 2, 10, 3, 6, 5, 5, 5]);
+console.log(" bubbleSort output is ", sorted, " sorted ? :", isSorted(sorted));

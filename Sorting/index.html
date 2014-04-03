@@ -1,9 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head></head>
+  <style>
+    .bar {
+      background-color:#2ECC71;
+      display: inline-block;
+      width: 20px;
+      height: 75px; /* Gets overriden by D3-assigned height below */
+      margin-right: 2px;
+    }
+  </style>
   <body>
+    <div></div>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script src="utility.js"></script>
     <script src="bubbleSort.js"></script>
     <script src="insertionSort.js"></script>
+    <script src="selectionSort.js"></script>
+    <script>
+    d3.select("body").selectAll("div")
+    .data([12,21,3,4])  // <-- The answer is here!
+    .enter()
+    .append("div")
+    .attr("class", "bar")
+    .style("height", function(d) {
+        var barHeight = d * 5;
+        return barHeight + "px";
+    });
+    </script>
   </body>
 </html>

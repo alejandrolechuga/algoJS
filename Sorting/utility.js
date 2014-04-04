@@ -7,3 +7,19 @@ function isSorted (array) {
   }
   return true;
 }
+
+function clock() {
+  var startime = 0;
+  var endtime = 0;
+  return {
+    start: function () {
+      startime = + (new Date);
+    },
+    stop: function () {
+      endtime = +(new Date);
+    },
+    enlapsedTime: function () {
+      return endtime - startime;
+    }
+  }
+}
